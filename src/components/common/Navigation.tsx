@@ -48,16 +48,16 @@ const Navigation = () => {
         className={`${navOpen ? "left-0 w-screen" : "left-full w-0"} absolute flex h-full flex-col justify-evenly  overflow-x-hidden bg-slate-600 transition-all duration-300`}
       >
         <div className="nav-links flex h-1/3 flex-col justify-between">
-          <Link href="/" className="text-4xl">
+          <Link className="font-heading3 text-4xl" href="/">
             Home
           </Link>
-          <Link href="/projects" className="text-4xl">
+          <Link className="font-heading3 text-4xl" href="/projects">
             Projects
           </Link>
-          <Link href="/about" className="text-4xl">
+          <Link className="font-heading3 text-4xl" href="/about">
             About
           </Link>
-          <Link href="/contact" className="text-4xl">
+          <Link className="font-heading3 text-4xl" href="/contact">
             Contact
           </Link>
         </div>
