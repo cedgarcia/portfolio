@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading1: ["var(--ChakraPetch-Bold)"],
+        heading2: ["var(--ChakraPetch-SemiBold)"],
+        heading3: ["var(--ChakraPetch-Medium)"],
+        heading4: ["var(--ChakraPetch-Regular)"],
+        heading5: ["var(--ChakraPetch-Light)"],
+      },
       screens: {
         mobile_S: "320px",
         mobile_M: "375px",
@@ -16,12 +23,7 @@ const config: Config = {
         laptop: "1024px",
         laptop_L: "1440px",
       },
-
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {},
     },
   },
   plugins: [],
