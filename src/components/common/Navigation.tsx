@@ -14,32 +14,67 @@ const Navigation = () => {
   return (
     <>
       {/* Mobile Nav */}
-      <nav className="flex">
+      <nav className="flex items-center justify-between laptop:hidden">
         <Link href="/">Logo</Link>
-        {/* <div className="fixed"> */}
         <div
-          className={`${navOpen ? "" : ""} flex h-10  w-10 cursor-pointer flex-col  justify-evenly bg-slate-600`}
+          className={`flex h-10 w-10 cursor-pointer flex-col justify-evenly bg-slate-600`}
           onClick={openNav}
         >
           <div
-            className={`${navOpen ? "-rotate-45 delay-300 " : "delay-0 "} line block  h-1  w-full bg-white  transition-all  duration-300 `}
+            className={`${navOpen ? "-rotate-45 delay-300" : "delay-0"} line block h-1 w-full bg-white transition-all duration-300`}
           ></div>
           <div
-            className={`${navOpen ? "-my-5 h-0 w-full opacity-0" : "my-2 h-1 w-full opacity-100 delay-300"} line  block  bg-white transition-all  `}
+            className={`${navOpen ? "-my-5 h-0 w-full opacity-0" : "my-2 h-1 w-full opacity-100 delay-300"} line block bg-white transition-all`}
           ></div>
           <div
-            className={`${navOpen ? "rotate-45 delay-300 " : " delay-0"} line block h-1 w-full  bg-white transition-all duration-300`}
+            className={`${navOpen ? "rotate-45 delay-300" : "delay-0"} line block h-1 w-full bg-white transition-all duration-300`}
           ></div>
         </div>
-        {/* </div> */}
       </nav>
-      <div
-        className={`${navOpen ? "left-0" : "left-full"} absolute  h-screen w-screen bg-slate-600 transition-all duration-300`}
-      >
+
+      {/* Desktop Nav */}
+      <nav className="hidden items-center justify-between laptop:flex">
+        <Link href="/">Logo</Link>
         <div className="nav-links">
+          <Link href="/">Home</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+        </div>
+      </nav>
+
+      {/* Mobile Nav Container */}
+      <div
+        className={`${navOpen ? "left-0 w-screen" : "left-full w-0"} absolute flex h-full flex-col justify-evenly  overflow-x-hidden bg-slate-600 transition-all duration-300`}
+      >
+        <div className="nav-links flex flex-col">
+          <Link href="/" className="text-5xl">
+            Home
+          </Link>
+          <Link href="/projects" className="text-5xl">
+            Projects
+          </Link>
+          <Link href="/about" className="text-5xl">
+            About
+          </Link>
+          <Link href="/contact" className="text-5xl">
+            Contact
+          </Link>
+        </div>
+
+        <div className="flex items-center justify-evenly">
+          <div className="social-links flex flex-col">
+            <p>Socials</p>
+            <Link href="">LinkedIn</Link>
+            <Link href="">Github</Link>
+            <Link href="">Instagram</Link>
+          </div>
+          <div className="project-links flex flex-col">
+            <p>Projects</p>
+            <Link href="">Project1</Link>
+            <Link href="">Project2</Link>
+            <Link href="">Project3</Link>
+          </div>
         </div>
       </div>
     </>
