@@ -7,13 +7,13 @@ const index: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <ShuffleTextPage text="Coder" />
+            <ShuffleTextPage text="Projects" />
           </li>
           <li>
-            <ShuffleTextPage text="Explorer" />
+            <ShuffleTextPage text="Are" />
           </li>
           <li>
-            <ShuffleTextPage text="Developer" />
+            <ShuffleTextPage text="Here" />
           </li>
         </ul>
       </nav>
