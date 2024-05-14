@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 interface ShuffleTextProps {
   text: string;
@@ -8,6 +8,7 @@ interface ShuffleTextProps {
 
 const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
   const [displayText, setDisplayText] = useState<string>(text);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const shuffle = (o: string[]): string[] => {
     for (
@@ -35,8 +36,9 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
         }
         setDisplayText(randomText.join(""));
         repeatShuffle(times, index + 1);
-      }, 100);
+      }, 100); // Reduced the delay to make it more responsive
     };
+
     repeatShuffle(originalText.length, 0);
   };
 
@@ -44,10 +46,24 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
     shuffleText(text);
   };
 
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.style.width = `${containerRef.current.offsetWidth}px`;
+    }
+  }, []);
+
   return (
-    <a href="#" className="shuffle" onMouseEnter={handleMouseEnter}>
+    <div
+      className="shuffle"
+      onMouseEnter={handleMouseEnter}
+      ref={containerRef}
+      style={{
+        display: "inline-block",
+        whiteSpace: "nowrap",
+      }}
+    >
       {displayText}
-    </a>
+    </div>
   );
 };
 
