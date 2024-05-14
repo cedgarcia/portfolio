@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 import ShuffleText from "@/components/common/ShuffleText";
+import ShuffleTextPage from "./ShuffleTextPage";
 
 const Navigation = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
@@ -35,24 +36,30 @@ const Navigation = () => {
       </nav>
 
       {/* Desktop Nav */}
-      <nav className="hidden items-center justify-between font-heading3 laptop:flex">
-        <Link href="/">Logo</Link>
+      <nav className="hidden items-center justify-between font-heading3 text-lg laptop:flex">
+        <Link href="/">
+          {/* <ShuffleTextPage text="＜ Ξ /＞" /> */}
+          <ShuffleTextPage text="＜ E />" />
+          <br />
+          <ShuffleTextPage text="﹤ Ξ /﹥" />
+          <br />
+          <ShuffleTextPage text="﹤ E /﹥" />
+        </Link>
         <div className="nav-links">
-          <Link href="/">
+          <Link className="px-4 " href="/">
             <ShuffleText text="Home" />
           </Link>
-          <Link href="/projects">
+          <Link className="px-4 " href="/projects">
             <ShuffleText text="Projects" />
           </Link>
-          <Link href="/about">
-            <ShuffleText text="About Me" />
+          <Link className="px-4 " href="/about">
+            <ShuffleText text="About" />
           </Link>
-          <Link href="/contact">
+          <Link className="px-4 " href="/contact">
             <ShuffleText text="Contact" />
           </Link>
         </div>
       </nav>
-
       {/* Mobile Nav Container */}
       <div
         className={`${navOpen ? "left-0 w-screen" : "left-full w-0"} absolute flex h-full flex-col justify-evenly  overflow-x-hidden bg-slate-600 transition-all duration-300`}
