@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 
+import ShuffleText from "@/components/common/ShuffleText";
+
 const Navigation = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
 
@@ -33,13 +35,21 @@ const Navigation = () => {
       </nav>
 
       {/* Desktop Nav */}
-      <nav className="hidden items-center justify-between laptop:flex">
+      <nav className="hidden items-center justify-between font-heading3 laptop:flex">
         <Link href="/">Logo</Link>
         <div className="nav-links">
-          <Link href="/">Home</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/">
+            <ShuffleText text="Home" />
+          </Link>
+          <Link href="/projects">
+            <ShuffleText text="Projects" />
+          </Link>
+          <Link href="/about">
+            <ShuffleText text="About Me" />
+          </Link>
+          <Link href="/contact">
+            <ShuffleText text="Contact" />
+          </Link>
         </div>
       </nav>
 
