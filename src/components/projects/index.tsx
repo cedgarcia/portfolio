@@ -7,7 +7,7 @@ const index: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <ShuffleTextPage text="Projects" />
+            <ShuffleTextPage text="Coder" />
           </li>
           <li>
             <ShuffleTextPage text="Are" />
