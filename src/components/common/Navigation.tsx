@@ -36,9 +36,11 @@ const Navigation = () => {
       </nav>
 
       {/* Desktop Nav */}
-      <nav className="hidden items-center justify-between bg-red-500 p-4 font-heading3 text-lg laptop:flex">
-        <Link className="" href="/">
-          <ShuffleText text="＜ E /> Home" />
+      <nav className="hidden items-center justify-between bg-red-500 p-4 font-heading5 text-lg laptop:flex">
+        <Link className="text-[2rem] font-bold " href="/">
+          {/* <ShuffleText text="＜ 𝘌 /＞" /> */}
+          <ShuffleText text="< 𝘌 />" />
+          {/* <ShuffleText text="Cedrick" /> */}
         </Link>
         <div className="nav-links">
           <Link className="m-6 " href="/">
