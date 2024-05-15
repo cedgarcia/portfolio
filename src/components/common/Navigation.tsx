@@ -36,26 +36,21 @@ const Navigation = () => {
       </nav>
 
       {/* Desktop Nav */}
-      <nav className="hidden items-center justify-between font-heading3 text-lg laptop:flex">
-        <Link href="/">
-          {/* <ShuffleTextPage text="＜ Ξ /＞" /> */}
-          <ShuffleTextPage text="＜ E />" />
-          <br />
-          <ShuffleTextPage text="﹤ Ξ /﹥" />
-          <br />
-          <ShuffleTextPage text="﹤ E /﹥" />
+      <nav className="hidden items-center justify-between bg-red-500 p-4 font-heading3 text-lg laptop:flex">
+        <Link className="" href="/">
+          <ShuffleText text="＜ E /> Home" />
         </Link>
         <div className="nav-links">
-          <Link className="px-4 " href="/">
+          <Link className="m-6 " href="/">
             <ShuffleText text="Home" />
           </Link>
-          <Link className="px-4 " href="/projects">
+          <Link className="m-6 " href="/projects">
             <ShuffleText text="Projects" />
           </Link>
-          <Link className="px-4 " href="/about">
-            <ShuffleText text="About" />
+          <Link className="m-6 " href="/about">
+            <ShuffleText text="About Me" />
           </Link>
-          <Link className="px-4 " href="/contact">
+          <Link className="m-6 " href="/contact">
             <ShuffleText text="Contact" />
           </Link>
         </div>

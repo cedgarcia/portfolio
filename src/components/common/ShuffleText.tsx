@@ -19,13 +19,14 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
     return o;
   };
 
-  const shuffleText = (originalText: string): void => {
+  const shuffleText = (originalText: string, callback?: () => void): void => {
     const elementTextArray: string[] = originalText.split("");
     let randomText: string[] = [];
 
     const repeatShuffle = (times: number, index: number): void => {
       if (index === times) {
         setDisplayText(originalText);
+        if (callback) callback();
         return;
       }
 
@@ -36,7 +37,7 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
         }
         setDisplayText(randomText.join(""));
         repeatShuffle(times, index + 1);
-      }, 100); // Reduced the delay to make it more responsive
+      }, 50); // Adjust the delay as needed
     };
 
     repeatShuffle(originalText.length, 0);
@@ -47,10 +48,14 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
   };
 
   useEffect(() => {
+    shuffleText(text);
+  }, [text]);
+
+  useEffect(() => {
     if (containerRef.current) {
       containerRef.current.style.width = `${containerRef.current.offsetWidth}px`;
     }
-  }, []);
+  }, [displayText]);
 
   return (
     <div

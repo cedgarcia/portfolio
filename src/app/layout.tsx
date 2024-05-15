@@ -38,7 +38,6 @@ export default function RootLayout({
       <body
         className={`${chakraPetchBold.variable} ${chakraPetchSemiBold.variable} ${chakraPetchMedium.variable} ${chakraPetchRegular.variable} ${chakraPetchLight.variable}`}
       >
-        <Navigation />
         {children}
       </body>
     </html>
