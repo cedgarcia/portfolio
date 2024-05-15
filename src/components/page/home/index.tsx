@@ -1,10 +1,13 @@
 import React from "react";
 import ShuffleTextPage from "@/components/common/ShuffleTextPage";
+import Navigation from "@/components/common/Navigation";
 
 const index: React.FC = () => {
   return (
     <>
-      <nav>
+      <div className="mx-auto mt-[50px] max-w-[1100px] px-[10px] py-[30px]">
+        <Navigation />
+
         <ul>
           <li className="font-heading1 text-[7rem]">
             <ShuffleTextPage text="Coder" />
@@ -16,7 +19,7 @@ const index: React.FC = () => {
             <ShuffleTextPage text="Developer" />
           </li> */}
         </ul>
-      </nav>
+      </div>
     </>
   );
 };

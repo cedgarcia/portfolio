@@ -17,7 +17,7 @@ const Navigation = () => {
   return (
     <>
       {/* Mobile Nav */}
-      <nav className="flex items-center justify-between px-6 py-4 laptop:hidden">
+      <nav className="flex items-center justify-between px-[25px] py-[15px] laptop:hidden">
         <Link className="text-[2rem] font-bold" href="/">
           <ShuffleText text="< 𝘌 />" />
         </Link>
@@ -38,7 +38,7 @@ const Navigation = () => {
       </nav>
 
       {/* Desktop Nav */}
-      <nav className="hidden items-center justify-between bg-red-500 p-4 font-heading5 text-lg laptop:flex">
+      <nav className="relative hidden items-center justify-between bg-red-500 p-4 font-heading5 text-lg laptop:flex">
         <Link className="text-[2rem] font-bold " href="/">
           {/* <ShuffleText text="＜ 𝘌 /＞" /> */}
           {/* <ShuffleText text="< 𝘌 />" /> */}
