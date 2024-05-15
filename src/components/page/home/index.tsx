@@ -6,15 +6,15 @@ const index: React.FC = () => {
     <>
       <nav>
         <ul>
-          <li>
+          <li className="font-heading1 text-[7rem]">
             <ShuffleTextPage text="Coder" />
           </li>
-          <li>
+          {/* <li className="font-heading1 text-[7rem]">
             <ShuffleTextPage text="Explorer" />
           </li>
-          <li>
+          <li className="font-heading1 text-[7rem]">
             <ShuffleTextPage text="Developer" />
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>

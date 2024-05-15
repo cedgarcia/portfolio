@@ -35,7 +35,7 @@ const ShuffleTextPage: React.FC<ShuffleTextProps> = ({ text }) => {
         }
         setDisplayText(randomText.join(""));
         repeatShuffle(times, index + 1);
-      }, 100); // Reduced the delay to make it more responsive
+      }, 120); // Reduced the delay to make it more responsive
     };
 
     repeatShuffle(originalText.length, 0);

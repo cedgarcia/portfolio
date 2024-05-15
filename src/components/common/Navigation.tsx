@@ -17,10 +17,12 @@ const Navigation = () => {
   return (
     <>
       {/* Mobile Nav */}
-      <nav className="flex items-center justify-between laptop:hidden">
-        <Link href="/">Logo</Link>
+      <nav className="flex items-center justify-between px-6 py-4 laptop:hidden">
+        <Link className="text-[2rem] font-bold" href="/">
+          <ShuffleText text="< 𝘌 />" />
+        </Link>
         <div
-          className={`flex h-10 w-10 cursor-pointer flex-col justify-evenly bg-slate-600`}
+          className={`flex h-10 w-10 cursor-pointer flex-col justify-evenly`}
           onClick={openNav}
         >
           <div
@@ -39,8 +41,8 @@ const Navigation = () => {
       <nav className="hidden items-center justify-between bg-red-500 p-4 font-heading5 text-lg laptop:flex">
         <Link className="text-[2rem] font-bold " href="/">
           {/* <ShuffleText text="＜ 𝘌 /＞" /> */}
-          <ShuffleText text="< 𝘌 />" />
-          {/* <ShuffleText text="Cedrick" /> */}
+          {/* <ShuffleText text="< 𝘌 />" /> */}
+          <ShuffleText text="JC Garcia" />
         </Link>
         <div className="nav-links">
           <Link className="m-6 " href="/">
