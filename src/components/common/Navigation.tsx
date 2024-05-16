@@ -14,8 +14,8 @@ const Navigation = () => {
   };
 
   return (
-    <>
-      <nav className="flex items-center justify-between px-[25px] py-[15px] laptop:hidden">
+    <nav>
+      <div className="flex items-center justify-between px-[25px] py-[15px] laptop:hidden">
         <Link className="text-[2rem]" href="/">
           <ShuffleText text="〔∃〙" />
         </Link>
@@ -33,13 +33,13 @@ const Navigation = () => {
             className={`${navOpen ? "rotate-45 delay-300" : "delay-0"} line block h-1 w-full bg-white transition-all duration-300`}
           ></div>
         </div>
-      </nav>
+      </div>
 
-      <nav className="relative mx-auto mt-[50px] hidden max-w-[1100px] items-center justify-between p-4 px-[10px] py-[30px] font-heading5 text-lg laptop:flex">
+      <div className="relative mx-auto mt-[50px] hidden max-w-[1100px] items-center justify-between p-4 px-[10px] py-[30px] font-heading5 text-lg laptop:flex">
         <Link className="text-[2rem]  " href="/">
           <ShuffleText text="〔∃〙" />
         </Link>
-        <div className="nav-links">
+        <div>
           <Link className="m-6 " href="/">
             <ShuffleText text="Home" />
           </Link>
@@ -53,12 +53,12 @@ const Navigation = () => {
             <ShuffleText text="Contact" />
           </Link>
         </div>
-      </nav>
+      </div>
 
       <div
         className={`${navOpen ? "left-0 w-screen" : "left-full w-0"} absolute flex h-full flex-col justify-evenly  overflow-x-hidden bg-slate-600 transition-all duration-300`}
       >
-        <div className="nav-links flex h-1/3 flex-col justify-between">
+        <div className="flex h-1/3 flex-col justify-between">
           <Link className="font-heading3 text-4xl" href="/">
             Home
           </Link>
@@ -88,7 +88,7 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 
