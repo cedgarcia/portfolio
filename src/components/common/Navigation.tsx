@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 
 import ShuffleText from "@/components/common/ShuffleText";
-import ShuffleTextPage from "./ShuffleTextPage";
 
 const Navigation = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
@@ -16,10 +15,9 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Mobile Nav */}
       <nav className="flex items-center justify-between px-[25px] py-[15px] laptop:hidden">
-        <Link className="text-[2rem] font-bold" href="/">
-          <ShuffleText text="< 𝘌 />" />
+        <Link className="text-[2rem]" href="/">
+          <ShuffleText text="〔∃〙" />
         </Link>
         <div
           className={`flex h-10 w-10 cursor-pointer flex-col justify-evenly`}
@@ -37,12 +35,9 @@ const Navigation = () => {
         </div>
       </nav>
 
-      {/* Desktop Nav */}
-      <nav className="relative hidden items-center justify-between bg-red-500 p-4 font-heading5 text-lg laptop:flex">
-        <Link className="text-[2rem] font-bold " href="/">
-          {/* <ShuffleText text="＜ 𝘌 /＞" /> */}
-          {/* <ShuffleText text="< 𝘌 />" /> */}
-          <ShuffleText text="JC Garcia" />
+      <nav className="relative mx-auto mt-[50px] hidden max-w-[1100px] items-center justify-between p-4 px-[10px] py-[30px] font-heading5 text-lg laptop:flex">
+        <Link className="text-[2rem]  " href="/">
+          <ShuffleText text="〔∃〙" />
         </Link>
         <div className="nav-links">
           <Link className="m-6 " href="/">
@@ -59,7 +54,7 @@ const Navigation = () => {
           </Link>
         </div>
       </nav>
-      {/* Mobile Nav Container */}
+
       <div
         className={`${navOpen ? "left-0 w-screen" : "left-full w-0"} absolute flex h-full flex-col justify-evenly  overflow-x-hidden bg-slate-600 transition-all duration-300`}
       >
@@ -71,7 +66,7 @@ const Navigation = () => {
             Projects
           </Link>
           <Link className="font-heading3 text-4xl" href="/about">
-            About
+            About Me
           </Link>
           <Link className="font-heading3 text-4xl" href="/contact">
             Contact
