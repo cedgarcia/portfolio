@@ -16,7 +16,7 @@ const Navigation = () => {
   return (
     <nav>
       <div className="flex items-center justify-between px-[25px] py-[15px] laptop:hidden">
-        <Link className="text-[2rem]" href="/">
+        <Link className="-mx-5 text-[2rem]" href="/">
           <ShuffleText text="〔∃〙" />
         </Link>
         <div
@@ -36,7 +36,7 @@ const Navigation = () => {
       </div>
 
       <div className="relative mx-auto mt-[50px] hidden max-w-[1100px] items-center justify-between p-4 px-[10px] py-[30px] font-heading5 text-lg laptop:flex">
-        <Link className="text-[2rem]  " href="/">
+        <Link className="-mx-5 text-[2rem]" href="/">
           <ShuffleText text="〔∃〙" />
         </Link>
         <div>
@@ -56,7 +56,7 @@ const Navigation = () => {
       </div>
 
       <div
-        className={`${navOpen ? "left-0 w-screen" : "left-full w-0"} absolute flex h-full flex-col justify-evenly  overflow-x-hidden bg-slate-600 transition-all duration-300`}
+        className={`${navOpen ? "left-0 w-screen opacity-90 " : "left-full w-0 opacity-0"} absolute flex h-full flex-col justify-evenly overflow-x-hidden  bg-black px-[35px] transition-all duration-300`}
       >
         <div className="flex h-1/3 flex-col justify-between">
           <Link className="font-heading3 text-4xl" href="/">
