@@ -47,7 +47,7 @@ const Navigation = () => {
             <ShuffleText text="Projects" />
           </Link>
           <Link className="m-6 " href="/about">
-            <ShuffleText text="About Me" />
+            <ShuffleText text="About" />
           </Link>
           <Link className="m-6 " href="/contact">
             <ShuffleText text="Contact" />
