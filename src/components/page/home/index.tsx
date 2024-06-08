@@ -10,14 +10,8 @@ const index: React.FC = () => {
 
         <ul>
           <li className="font-heading1 text-[7rem]">
-            <ShuffleTextPage text="Coder" />
+            <ShuffleTextPage text="Home" />
           </li>
-          {/* <li className="font-heading1 text-[7rem]">
-            <ShuffleTextPage text="Explorer" />
-          </li>
-          <li className="font-heading1 text-[7rem]">
-            <ShuffleTextPage text="Developer" />
-          </li> */}
         </ul>
       </div>
     </>
