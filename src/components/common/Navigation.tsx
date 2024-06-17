@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import ShuffleText from "@/components/common/ShuffleText";
 
 const Navigation = () => {
+  const currentPath = usePathname();
   const [navOpen, setNavOpen] = useState<boolean>(false);
 
   const openNav = () => {
     setNavOpen(!navOpen);
-    console.log("clicked");
   };
 
   return (
@@ -40,16 +41,40 @@ const Navigation = () => {
           <ShuffleText text="〔∃〙" />
         </Link>
         <div>
-          <Link className="m-6 " href="/">
+          <Link
+            className={
+              currentPath === "/" ? "m-6 text-green-500" : "m-6 text-white"
+            }
+            href="/"
+          >
             <ShuffleText text="Home" />
           </Link>
-          <Link className="m-6 " href="/projects">
+          <Link
+            className={
+              currentPath === "/projects"
+                ? "m-6 text-green-500"
+                : "m-6 text-white"
+            }
+            href="/projects"
+          >
             <ShuffleText text="Projects" />
           </Link>
-          <Link className="m-6 " href="/about">
+          <Link
+            className={
+              currentPath === "/about" ? "m-6 text-green-500" : "m-6 text-white"
+            }
+            href="/about"
+          >
             <ShuffleText text="About" />
           </Link>
-          <Link className="m-6 " href="/contact">
+          <Link
+            className={
+              currentPath === "/contact"
+                ? "m-6 text-green-500"
+                : "m-6 text-white"
+            }
+            href="/contact"
+          >
             <ShuffleText text="Contact" />
           </Link>
         </div>
