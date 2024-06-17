@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localfont from "next/font/local";
 import "./globals.css";
-import Navigation from "@/components/common/Navigation";
-
 export const metadata: Metadata = {
   title: "Ced Garcia | Portfolio",
   description: "Software Developer",
