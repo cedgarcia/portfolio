@@ -15,9 +15,9 @@ const Navigation = () => {
   };
 
   return (
-    <nav>
+    <nav className="relative z-[999]">
       <div className="flex items-center justify-between px-[25px] py-[15px] laptop:hidden">
-        <Link className="-mx-5 text-[2rem]" href="/">
+        <Link className="z -mx-5 text-[2rem]" href="/">
           <ShuffleText text="〔∃〙" />
         </Link>
         <div

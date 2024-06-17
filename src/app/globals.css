@@ -13,3 +13,8 @@ html {
   color: #fff;
   overflow-x: hidden;
 }
+
+.lines.green {
+  z-index: 2;
+  clip-path: circle(10rem at var(--x) var(--y));
+}
