@@ -23,7 +23,11 @@ const config: Config = {
         laptop: "1024px",
         laptop_L: "1440px",
       },
-      colors: {},
+      colors: {
+        mainGreen: "#00ff00",
+        darkGreen: "#002706",
+        greyMain: "#5a5a5a",
+      },
     },
   },
   plugins: [],
