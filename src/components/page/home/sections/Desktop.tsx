@@ -35,7 +35,7 @@ const HomePageDesktop = () => {
         ref={containerRef}
         className="relative z-40 mx-auto -mt-24 mb-20 h-[400vh] w-screen min-w-[1060px] bg-black laptop:w-10/12"
       >
-        <div className="absolute z-50 m-auto h-full  ">
+        <div className="absolute z-50 m-auto h-full w-full  ">
           <div className="hero h-screen ">
             <LandingSection />
             <AboutSection />

@@ -5,7 +5,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="flex h-[90vh] flex-col justify-center pl-[8rem]">
+    <div className="my-[5rem] flex flex-col justify-center pl-[8rem]">
       <div className="pb-12 leading-10">
         <span className="font-heading1 text-[2.3rem] text-blue-400 ">
           <ShuffleTextPage text="Driven to build" />
