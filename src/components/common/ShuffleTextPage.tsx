@@ -43,7 +43,7 @@ const ShuffleTextPage: React.FC<ShuffleTextProps> = ({ text }) => {
 
   useEffect(() => {
     shuffleText(text);
-  }, [text]);
+  }, []);
 
   useEffect(() => {
     if (containerRef.current) {

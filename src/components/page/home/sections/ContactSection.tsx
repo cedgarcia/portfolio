@@ -6,10 +6,11 @@ const ContactSection = () => {
     <>
       <div className="px-8 py-[8rem] tablet:px-[10%] tablet:pb-[8rem]">
         <div className="font-heading1 text-[3rem] text-blue-400 tablet:text-[4rem]">
-          Let's team up!
+          Let&apos;s team up!
         </div>
         <div className="text-[1.2rem] text-white">
-          Do you have a cool project you'd like me to work on? Drop me a line!
+          Do you have a cool project you&apos;d like me to work on? Drop me a
+          line!
         </div>
         <div className="text-[1.2rem] text-white">
           You can get in touch with me via:

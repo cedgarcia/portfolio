@@ -1,5 +1,6 @@
 import React from "react";
 import projectsData from "@/app/assets/projects.json";
+import Image from "next/image";
 
 const ProjectSection = () => {
   return (
@@ -16,7 +17,7 @@ const ProjectSection = () => {
             key={id}
           >
             <a href={live} target="_blank" rel="noopener noreferrer">
-              <img src={image} className="rounded-lg" />
+              <img alt="image" src={image} className="rounded-lg" />
               <h3 className="-mt-12 font-heading2 text-[2.5rem] tracking-[2px] text-blue-400 transition-all duration-300 ease-in-out">
                 {title}
               </h3>

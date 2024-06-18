@@ -49,7 +49,7 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
 
   useEffect(() => {
     shuffleText(text);
-  }, [text]);
+  }, []);
 
   useEffect(() => {
     if (containerRef.current) {

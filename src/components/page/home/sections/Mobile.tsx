@@ -3,6 +3,7 @@ import ShuffleTextPage from "@/components/common/ShuffleTextPage";
 import ShuffleTextSlow from "@/components/common/ShuffleTextSlow";
 import Link from "next/link";
 import projectsData from "@/app/assets/projects.json";
+import Image from "next/image";
 
 const Mobile = () => {
   return (
@@ -95,7 +96,7 @@ const Mobile = () => {
               key={id}
             >
               <a href={live} target="_blank" rel="noopener noreferrer">
-                <img src={image} className="rounded-lg" />
+                <img alt="image" src={image} className="rounded-lg" />
                 <h3 className="-mt-12 font-heading2 text-[2.5rem] tracking-[2px] text-blue-200 transition-all duration-300 ease-in-out">
                   {title}
                 </h3>
