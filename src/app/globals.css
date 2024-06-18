@@ -13,6 +13,9 @@ html {
   color: #fff;
   overflow-x: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 
 .lines.green {
   z-index: 2;
