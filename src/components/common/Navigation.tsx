@@ -15,7 +15,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav>
+    <nav className="relative z-[999]">
       <div className="flex items-center justify-between px-[25px] py-[15px] laptop:hidden">
         <Link className="-mx-5 text-[2rem]" href="/">
           <ShuffleText text="〔∃〙" />
@@ -36,14 +36,14 @@ const Navigation = () => {
         </div>
       </div>
 
-      <div className="relative mx-auto mt-[50px] hidden max-w-[1100px] items-center justify-between p-4 px-[10px] py-[30px] font-heading5 text-lg laptop:flex">
+      <div className="relative z-[999] mx-auto mt-[50px] hidden max-w-[1100px] items-center justify-between p-4 px-[10px] py-[30px] font-heading5 text-lg laptop:flex">
         <Link className="-mx-5 text-[2rem]" href="/">
           <ShuffleText text="〔∃〙" />
         </Link>
-        <div>
+        <div className="font-heading4 text-[1.2rem] tracking-wide">
           <Link
             className={
-              currentPath === "/" ? "m-6 text-green-500" : "m-6 text-white"
+              currentPath === "/" ? "m-6 text-blue-300" : "m-6 text-white"
             }
             href="/"
           >
@@ -52,7 +52,7 @@ const Navigation = () => {
           <Link
             className={
               currentPath === "/projects"
-                ? "m-6 text-green-500"
+                ? "m-6 text-blue-200"
                 : "m-6 text-white"
             }
             href="/projects"
@@ -61,7 +61,7 @@ const Navigation = () => {
           </Link>
           <Link
             className={
-              currentPath === "/about" ? "m-6 text-green-500" : "m-6 text-white"
+              currentPath === "/about" ? "m-6 text-blue-500" : "m-6 text-white"
             }
             href="/about"
           >
@@ -70,7 +70,7 @@ const Navigation = () => {
           <Link
             className={
               currentPath === "/contact"
-                ? "m-6 text-green-500"
+                ? "m-6 text-blue-500"
                 : "m-6 text-white"
             }
             href="/contact"
@@ -81,7 +81,7 @@ const Navigation = () => {
       </div>
 
       <div
-        className={`${navOpen ? "left-0 w-screen opacity-90 " : "left-full w-0 opacity-0"} absolute flex h-full flex-col justify-evenly overflow-x-hidden  bg-black px-[35px] transition-all duration-300`}
+        className={`${navOpen ? "left-0 w-screen opacity-100 " : "left-full w-0 opacity-0"} absolute flex h-screen flex-col justify-evenly overflow-x-hidden  bg-black px-[35px] transition-all duration-300`}
       >
         <div className="flex h-1/3 flex-col justify-between">
           <Link className="font-heading3 text-4xl" href="/">
