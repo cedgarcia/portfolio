@@ -38,8 +38,8 @@ const HomePageDesktop = () => {
         <div className="absolute z-50 m-auto h-full  ">
           <div className="hero h-screen ">
             <LandingSection />
-            <ProjectSection />
             <AboutSection />
+            <ProjectSection />
           </div>
         </div>
 
