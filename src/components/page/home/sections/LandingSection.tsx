@@ -8,13 +8,13 @@ const LandingSection = () => {
       <div className="absolute left-[0rem] top-[30rem] -ml-[4rem] rotate-90 font-heading4 text-[13px] uppercase tracking-[5px] text-blue-400">
         <ShuffleTextPage text="scroll down >>>" />
       </div>
-      <div className="flex h-full flex-col justify-center pl-[20%]">
+      <div className="flex h-full flex-col justify-center pl-[10%]">
         <div className="font-heading3 text-[20px] text-blue-100">
           <ShuffleTextPage text="Hi, I'm" />
         </div>
         <div className="flex flex-row font-heading1 text-[6rem] text-blue-300">
           <span className="mr-5">
-            <ShuffleTextSlow text="Ced" />
+            <ShuffleTextSlow text="Cedrick" />
           </span>
           <span>
             <ShuffleTextSlow text="Garcia" />

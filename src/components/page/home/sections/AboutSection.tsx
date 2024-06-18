@@ -6,7 +6,7 @@ import React from "react";
 const AboutSection = () => {
   return (
     <div className="my-[5rem] flex flex-col justify-center pl-[8rem]">
-      <div className="pb-12 leading-10">
+      <div className="pb-12 leading-[3.5rem]">
         <span className="font-heading1 text-[2.3rem] text-blue-400 ">
           <ShuffleTextPage text="Driven to build" />
         </span>
@@ -15,7 +15,7 @@ const AboutSection = () => {
           <ShuffleTextPage text="outstanding web experiences." />
         </span>
       </div>
-      <div className="text-[1.2rem] tracking-wide text-white">
+      <div className="text-[1.2rem] leading-[2.5rem] tracking-wide text-white">
         <ShuffleTextPage text="I am a " />
         <span className="ml-2 font-heading1 text-blue-200">
           <ShuffleTextSlow text="Software Engineer" />
