@@ -35,7 +35,7 @@ const ShuffleTextPage: React.FC<ShuffleTextProps> = ({ text }) => {
         }
         setDisplayText(randomText.join(""));
         repeatShuffle(times, index + 1);
-      }, 50);
+      }, 20);
     };
 
     repeatShuffle(originalText.length, 0);
