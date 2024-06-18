@@ -4,6 +4,8 @@ import LandingSection from "./LandingSection";
 import ProjectSection from "./ProjectSection";
 import AboutSection from "./AboutSection";
 import BackgroundLines from "./BackgroundLines";
+import ContactSection from "./ContactSection";
+import Footer from "@/components/common/Footer";
 
 const HomePageDesktop = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -18,7 +20,6 @@ const HomePageDesktop = () => {
 
         document.documentElement.style.setProperty("--x", `${x}px`);
         document.documentElement.style.setProperty("--y", `${y}px`);
-        console.log("X: ", x, "Y: ", y);
       }
     };
 
@@ -36,13 +37,12 @@ const HomePageDesktop = () => {
         className="relative z-40 mx-auto -mt-24 mb-20 h-[400vh] w-screen min-w-[1060px] bg-black laptop:w-10/12"
       >
         <div className="absolute z-50 m-auto h-full w-full  ">
-          <div className="hero h-screen ">
+          <div className="h-screen ">
             <LandingSection />
             <AboutSection />
             <ProjectSection />
           </div>
         </div>
-
         <BackgroundLines />
       </section>
     </>
