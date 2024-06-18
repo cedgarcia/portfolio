@@ -9,7 +9,7 @@ import ShuffleTextPage from "./ShuffleTextPage";
 const Footer = () => {
   return (
     <>
-      <footer className="flex w-full flex-col  items-center bg-white text-black tablet:flex-row tablet:justify-between tablet:px-[8rem] tablet:py-[3rem]">
+      <footer className="flex w-full flex-col  items-center bg-white text-black tablet:flex-row tablet:justify-between tablet:px-[3rem] tablet:py-[3rem] laptop:px-[8rem]">
         <div className="flex flex-col items-center justify-center py-6 tablet:flex-row tablet:items-start">
           <div className="flex flex-col items-center ">
             <Link href="/" className="font-heading1 text-[2rem] text-black">
@@ -27,7 +27,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col font-semibold tablet:ml-[10rem]">
+          <div className="flex flex-col font-semibold tablet:ml-[3rem] laptop:ml-[10rem]">
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/projects">Projects</Link>
