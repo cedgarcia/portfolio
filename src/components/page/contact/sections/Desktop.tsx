@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import BackgroundLines from "./BackgroundLines";
 import ShuffleTextPage from "@/components/common/ShuffleTextPage";
+import ShuffleText from "@/components/common/ShuffleText";
 
 const Desktop = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,17 +37,19 @@ const Desktop = () => {
           <div className="h-screen ">
             <div className="h-screen px-8 py-[8rem] tablet:px-[10%] tablet:pb-[8rem] tablet:pt-[30%]">
               <div className="font-heading2 text-[2rem] text-blue-200 tablet:text-[3rem]">
-                hello
+                <ShuffleTextPage text="hello" />
               </div>
               <div className="py-4 font-heading1 text-[3rem] text-blue-400 tablet:text-[4rem]">
-                Let&apos;s team up!
+                <ShuffleTextPage text="Let's team up!" />
               </div>
               <div className="text-[1.2rem] text-white">
-                Do you have a cool project you&apos;d like me to work on? Drop
-                me a line!
+                <ShuffleTextPage
+                  text="  Do you have a cool project you'd like me to work on? Drop
+                me a line!"
+                />
               </div>
               <div className="text-[1.2rem] text-white">
-                You can get in touch with me via:
+                <ShuffleTextPage text="     You can get in touch with me via:" />
               </div>
 
               <div className="flex w-fit flex-col tablet:flex-row">

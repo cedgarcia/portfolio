@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from "react";
 import BackgroundLines from "./BackgroundLines";
 import ShuffleTextPage from "@/components/common/ShuffleTextPage";
 import sharpenCedrickImage from "@/app/assets/sharpen_cedrick.png";
+import ShuffleText from "@/components/common/ShuffleTextFast";
+import ShuffleTextSuperFast from "@/components/common/ShuffleTextSuperFast";
 
 const Desktop = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -38,36 +40,48 @@ const Desktop = () => {
             <div className="h-screen px-8 py-[8rem] tablet:px-[10%] tablet:pb-[8rem]">
               <div className="py-12">
                 <div className=" font-heading1 text-[3rem] text-blue-400 tablet:text-[4rem]">
-                  John Cedrick Garcia
+                  <ShuffleText text="John Cedrick Garcia" />
                 </div>
                 <div className="font-heading5 text-[1.3rem] tracking-wider text-blue-100  ">
-                  Software Developer, from Pasig Philippines
+                  <ShuffleText text="Software Developer, from Pasig Philippines" />
                 </div>
               </div>
               <div className="flex justify-between gap-3">
                 <div className="w-7/12">
                   <div className="text-[1rem] font-light leading-[2rem] text-white     ">
-                    My interest in development began in 2020 when I tried to
-                    code by completing projects on
+                    <ShuffleTextSuperFast text="  My interest in development began in 2020 when I tried to code by completing projects on" />
+
                     <a href="" className="font-heading3 text-blue-300">
                       {" "}
-                      frontendmentor.io.
+                      <ShuffleText text="frontendmentor.io." />
                     </a>
                   </div>
                   <div className="py-2 text-[1rem] font-thin leading-[2rem] text-white     ">
-                    Through this, I learned a great deal about Frontend
-                    development. I leverage my passion for Visual Arts to guide
-                    the execution of my engineering work.
+                    <ShuffleTextSuperFast
+                      text="Through this, I learned a great deal about Frontend
+                    development."
+                    />
+                    <ShuffleTextSuperFast
+                      text=" I leverage my passion for Visual Arts to guide
+                      the execution of my engineering work."
+                    />
                   </div>
                   <div className="text-[1rem] font-thin leading-[2rem] text-white     ">
-                    Fast-forward to today, and I've had the privilege of working
-                    at{" "}
+                    <ShuffleTextSuperFast
+                      text=" Fast-forward to today, and I've had the privilege of working
+                      at"
+                    />{" "}
                     <a href="" className="font-heading3 text-blue-300">
-                      Bluehive
+                      <ShuffleText text="Bluehive" />
                     </a>
-                    , a software development company. Currently, my main focus
-                    is on building accessible, inclusive products and scalable
-                    systems for a variety of clients.
+                    <ShuffleTextSuperFast
+                      text="a software development company. Currently, my main focus
+                      is on building "
+                    />
+                    <ShuffleTextSuperFast
+                      text="accessible, inclusive products and scalable
+                      systems for a variety of clients."
+                    />
                   </div>
                 </div>
                 <div className="absolute right-0 top-[17rem] mr-[8rem]  w-3/12">
