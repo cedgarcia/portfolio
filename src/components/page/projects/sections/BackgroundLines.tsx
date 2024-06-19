@@ -116,6 +116,7 @@ const BackgroundLines = () => {
           <div className="absolute right-[50%] top-[200vh] h-[200vh] w-[1px] bg-blue-400"></div>
           <div className="absolute right-[25%] top-[200vh] h-[200vh] w-[1px] bg-blue-400"></div> */}
           {/* RightMost Side */}
+          <div className="absolute right-5 h-[100vh] w-[1px] bg-blue-400"></div>
           <div className="absolute right-0 h-[100vh] w-[1px] bg-blue-400"></div>
           {/* rightmost side about */}
           <div className="absolute right-0 top-[100vh] h-[100vh] w-[1px] bg-blue-600"></div>
