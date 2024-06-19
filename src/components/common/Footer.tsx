@@ -53,7 +53,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="py-6">
-            <span className="font-heading4 text-gray-700">Portfolio</span> •{" "}
+            <span className="font-heading4 text-gray-700">WIP Portfolio</span> •{" "}
             <span className="font-heading1 text-gray-700">2024</span>
           </div>
         </div>
