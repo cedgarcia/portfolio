@@ -1,10 +1,14 @@
 import React from "react";
 import projectsData from "@/app/assets/projects.json";
+import ShuffleTextPage from "@/components/common/ShuffleTextPage";
 const Mobile = () => {
   return (
     <section className="  ">
       <h3 className="px-[3rem] py-[2rem] pt-[3rem] font-heading2 text-[2.5rem] text-blue-400">
-        Selected Works
+        <span className="mr-[1rem]">
+          <ShuffleTextPage text=" Selected" />
+        </span>
+        <ShuffleTextPage text=" Works." />{" "}
       </h3>
       <div className="mx-[3rem] flex flex-wrap">
         {projectsData.map(({ id, title, image, live }, index) => (

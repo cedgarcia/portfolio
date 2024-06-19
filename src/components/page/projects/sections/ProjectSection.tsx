@@ -1,12 +1,16 @@
 import React from "react";
 import projectsData from "@/app/assets/projects.json";
 import Image from "next/image";
+import ShuffleTextPage from "@/components/common/ShuffleTextPage";
 
 const ProjectSection = () => {
   return (
     <div className="mx-[5rem]   my-[3rem]">
       <h3 className="px-[3rem] pb-[4rem] pt-[6rem] font-heading2 text-[4rem] text-blue-300">
-        Selected Works
+        <span className="mr-[1rem]">
+          <ShuffleTextPage text=" Selected" />
+        </span>
+        <ShuffleTextPage text=" Works." />
       </h3>
       <div className="mx-[5rem] flex flex-wrap">
         {projectsData.map(({ id, title, image, live }, index) => (
