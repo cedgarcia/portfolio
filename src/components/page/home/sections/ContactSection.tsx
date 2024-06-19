@@ -26,6 +26,7 @@ const ContactSection = () => {
             </div>
           </a>
           <a
+            target="__blank"
             href="https://www.linkedin.com/in/cedrickgarcia/"
             className="mt-4 w-fit tablet:mt-10 "
           >
