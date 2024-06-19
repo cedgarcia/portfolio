@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect, useRef } from "react";
 
 interface ShuffleTextProps {
@@ -49,13 +47,13 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text }) => {
 
   useEffect(() => {
     shuffleText(text);
-  }, []);
+  }, [text]); // Add 'text' as a dependency
 
   useEffect(() => {
     if (containerRef.current) {
       containerRef.current.style.width = `${containerRef.current.offsetWidth}px`;
     }
-  }, [displayText]);
+  }, [displayText]); // Add 'displayText' as a dependency
 
   return (
     <div

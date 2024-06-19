@@ -43,8 +43,8 @@ const Mobile = () => {
                   the execution of my engineering work.
                 </div>
                 <div className="pt-8 text-[1.5rem] font-light leading-[2.5rem] text-white   tablet:text-[2rem] tablet:leading-[3rem]  ">
-                  Fast-forward to today, and I've had the privilege of working
-                  at{" "}
+                  Fast-forward to today, and I&apos;ve had the privilege of
+                  working at{" "}
                   <a href="" className="font-heading3 text-blue-300">
                     Bluehive
                   </a>

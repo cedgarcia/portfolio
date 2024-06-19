@@ -42,14 +42,15 @@ const ShuffleTextPage: React.FC<ShuffleTextProps> = ({ text }) => {
   };
 
   useEffect(() => {
-    shuffleText(text);
-  }, []);
+    shuffleText(text); // Invoke shuffleText when 'text' changes
+  }, [text]); // Add 'text' as a dependency
 
   useEffect(() => {
+    // Update container width after displayText changes
     if (containerRef.current) {
       containerRef.current.style.width = `${containerRef.current.offsetWidth}px`;
     }
-  }, [displayText]);
+  }, [displayText]); // Add 'displayText' as a dependency
 
   return (
     <div
