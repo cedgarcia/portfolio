@@ -22,7 +22,7 @@ const ProjectSection = () => {
           >
             <a href={live} target="_blank" rel="noopener noreferrer">
               <img alt="image" src={image} className="rounded-lg" />
-              <h3 className="-mt-12 font-heading2 text-[2.5rem] tracking-[2px] text-blue-400 transition-all duration-300 ease-in-out">
+              <h3 className="-mt-12 font-heading1 text-[2.5rem] tracking-[2px] text-blue-900 transition-all duration-300 ease-in-out">
                 {title}
               </h3>
             </a>

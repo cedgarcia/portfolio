@@ -1,5 +1,21 @@
 [
   {
+    "id": 5,
+    "title": "AFEX Asia Food Expo",
+    "description": "Executed a comprehensive website revision project tailored for the client's 2024 event, meticulously incorporating their feedback and specific requirements to enhance user experience and functionality. ",
+    "image": "/images/projects/afex.png",
+    "live": "https://www.asiafoodexpo.ph/",
+    "techs": ["ReactJS", "Tailwind", "AWS"]
+  },
+  {
+    "id": 4,
+    "title": "Venum Philippines",
+    "description": "Transitioned the Venum Philippines website to the Shopify platform. Collaborated extensively with clients to understand their needs and effectively deliver unique solutions.",
+    "image": "/images/projects/venum.png",
+    "live": "https://venumfight.com.ph/",
+    "techs": ["Shopify"]
+  },
+  {
     "id": 3,
     "title": "Planets Fact",
     "description": "A website that displays specific information about the planet you've chosen. Data was mapped from a JSON file, and hooks were used to handle states.",
@@ -7,23 +23,5 @@
     "github": "https://github.com/cedgarcia/planets-fact",
     "live": "https://ced-planets-fact.netlify.app/",
     "techs": ["React", "Styled-Components", "Netlify"]
-  },
-  {
-    "id": 2,
-    "title": "Maze Generator",
-    "description": "This project was made in response to a YouTube tutorial. Added a feature that allows the user to specify the number of grids to be rendered.",
-    "image": "./images/projects/maze.png",
-    "github": "https://github.com/cedgarcia/Maze-generator",
-    "live": "https://ced-maze-generator.vercel.app/",
-    "techs": ["HTML", "CSS", "Javascript"]
-  },
-  {
-    "id": 1,
-    "title": "Photosnap",
-    "description": "A marketing site for a photo-sharing app. Built reusable components using Compound Component pattern. ",
-    "image": "/images/projects/photosnap.png",
-    "github": "https://github.com/cedgarcia/Photosnap",
-    "live": "https://ced-photosnap.netlify.app/",
-    "techs": ["React", "React-router-v6", "Styled-Components"]
   }
 ]

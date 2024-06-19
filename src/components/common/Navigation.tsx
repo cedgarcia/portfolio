@@ -98,7 +98,7 @@ const Navigation = () => {
           </Link>
         </div>
 
-        <div className="flex items-center justify-evenly">
+        {/* <div className="flex items-center justify-evenly">
           <div className="social-links flex flex-col">
             <p>Socials</p>
             <Link href="">LinkedIn</Link>
@@ -111,7 +111,7 @@ const Navigation = () => {
             <Link href="">Project2</Link>
             <Link href="">Project3</Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
