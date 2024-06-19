@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localfont from "next/font/local";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Ced Garcia | Portfolio",
+  title: "Ced Garcia | Software Developer",
   description: "Software Developer",
 };
 
