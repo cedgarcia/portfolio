@@ -16,13 +16,16 @@ const Footer = () => {
               Ced Garcia
             </Link>
             <div className="flex py-6">
-              <Link href="">
+              <Link
+                target="__blank"
+                href="https://www.linkedin.com/in/cedrickgarcia/"
+              >
                 <FaLinkedin className="mx-2 text-2xl" />
               </Link>
-              <Link href="">
+              <Link target="__blank" href="https://github.com/cedgarcia">
                 <FaGithub className="mx-2 text-2xl" />
               </Link>
-              <Link href="">
+              <Link target="__blank" href="https://codepen.io/cedcodes">
                 <FaCodepen className="mx-2 text-2xl" />
               </Link>
             </div>
