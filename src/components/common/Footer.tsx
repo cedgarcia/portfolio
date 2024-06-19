@@ -39,7 +39,11 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center">
           <div className="">
-            <Link href="" className="mt-10 w-fit">
+            <Link
+              target="__blank"
+              href="https://drive.google.com/file/d/1Rq_CG8o35T16brTgSbqfB6NT3JY303RX/view"
+              className="mt-10 w-fit"
+            >
               <div
                 className="
                 flex w-full items-center px-5 py-2 font-heading2 text-black duration-300 ease-in-out"
