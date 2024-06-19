@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="font-heading4 text-[1.2rem] tracking-wide">
           <Link
             className={
-              currentPath === "/" ? "m-6 text-blue-300" : "m-6 text-white"
+              currentPath === "/" ? "m-6 text-blue-400" : "m-6 text-white"
             }
             href="/"
           >
@@ -52,7 +52,7 @@ const Navigation = () => {
           <Link
             className={
               currentPath === "/projects"
-                ? "m-6 text-blue-200"
+                ? "m-6 text-blue-400"
                 : "m-6 text-white"
             }
             href="/projects"
@@ -61,7 +61,7 @@ const Navigation = () => {
           </Link>
           <Link
             className={
-              currentPath === "/about" ? "m-6 text-blue-500" : "m-6 text-white"
+              currentPath === "/about" ? "m-6 text-blue-400" : "m-6 text-white"
             }
             href="/about"
           >
@@ -70,7 +70,7 @@ const Navigation = () => {
           <Link
             className={
               currentPath === "/contact"
-                ? "m-6 text-blue-500"
+                ? "m-6 text-blue-400"
                 : "m-6 text-white"
             }
             href="/contact"
