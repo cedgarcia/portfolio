@@ -71,7 +71,11 @@ const Desktop = () => {
                       text=" Fast-forward to today, and I've had the privilege of working
                       at"
                     />{" "}
-                    <a href="" className="font-heading3 text-blue-300">
+                    <a
+                      href="https://bluehive.com.ph/"
+                      className="font-heading3 text-blue-300"
+                      target="_blank"
+                    >
                       <ShuffleText text="Bluehive" />
                     </a>
                     <ShuffleTextSuperFast

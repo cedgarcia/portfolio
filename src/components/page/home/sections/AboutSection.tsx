@@ -32,7 +32,7 @@ const AboutSection = () => {
         <br />
         <span>
           <ShuffleTextPage text="and maintaining existing products at" />
-          <Link href="">
+          <Link href="https://bluehive.com.ph/" target="_blank">
             <span className="ml-2 font-heading1 text-blue-500 hover:text-blue-300">
               <ShuffleTextSlow text="BlueHive." />
             </span>

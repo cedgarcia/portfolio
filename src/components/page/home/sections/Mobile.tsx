@@ -69,7 +69,7 @@ const Mobile = () => {
           <br />
           <span>
             <ShuffleTextPage text="and maintaining existing products at" />
-            <Link href="">
+            <Link href="https://bluehive.com.ph/">
               <span className="font-heading1 text-blue-500 hover:text-blue-300 tablet:ml-2">
                 <ShuffleTextSlow text="BlueHive." />
               </span>
