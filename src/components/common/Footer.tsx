@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center">
           <div className="">
-            <Link
+            {/* <Link
               target="__blank"
               href="https://drive.google.com/file/d/1Rq_CG8o35T16brTgSbqfB6NT3JY303RX/view"
               className="mt-10 w-fit"
@@ -57,7 +57,7 @@ const Footer = () => {
                   </g>
                 </svg>
               </div>
-            </Link>
+            </Link> */}
           </div>
           <div className="py-6">
             <span className="font-heading4 text-gray-700">WIP Portfolio</span> •{" "}
