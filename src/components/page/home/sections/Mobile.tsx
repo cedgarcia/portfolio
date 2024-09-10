@@ -2,7 +2,7 @@ import React from "react";
 import ShuffleTextPage from "@/components/common/ShuffleTextPage";
 import ShuffleTextSlow from "@/components/common/ShuffleTextSlow";
 import Link from "next/link";
-import projectsData from "@/app/assets/projects.json";
+import projectsData from "@/app/assets/projects2.json";
 import Image from "next/image";
 
 const Mobile = () => {

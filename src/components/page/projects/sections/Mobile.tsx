@@ -1,5 +1,5 @@
 import React from "react";
-import projectsData from "@/app/assets/projects.json";
+import projectsData from "@/app/assets/projects2.json";
 import ShuffleTextPage from "@/components/common/ShuffleTextPage";
 const Mobile = () => {
   return (
